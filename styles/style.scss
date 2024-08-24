@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/images/bg-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #684BB1;   
+}
+
+header {
+    max-width: 1170px;
+    margin: 0 auto;
+    height: 10vh;
+    display: flex;
+    justify-content: start;
+    img {
+        width: 200px;
+    }
+}
+
+.hero {
+    .container {
+        margin: 0 auto;
+        max-width: 1170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 80vh; 
+        .hero-inner {
+            max-width: 1170px;
+        }
+
+    }
+    .hero-content {
+        display: flex;
+        gap: 60px;
+        .hero-img {
+            img {
+                width: 670px;
+            }
+        }
+        .hero-text {
+            display: flex;
+            flex-direction: column;
+            padding-top: 40px;
+            gap: 24px;
+            width: 520px;
+            h1 {
+                font-family: "Poppins", sans-serif;
+                color: white;
+                font-size: 40px;
+                line-height: 60px;
+                font-weight: 600;            }
+            p {
+                color: white;
+                font-family: "Open Sans", sans-serif;
+                font-size: 18px;
+                line-height: 27px;
+            }
+            button {
+                width: 200px;
+                padding: 16px 64px;
+                border-radius: 48px;
+                outline: none;
+                color: #684BB1;
+                border: none;
+                font-family: "Poppins", sans-serif;
+                font-size: 18px;
+                font-weight: 400;
+                box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 26%);
+                background-color: white;
+            }
+            button:hover {
+                color: white;
+                background-color: #684BB1;
+            }
+        }
+    }
+}
+
+footer {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+    height: 10vh;
+    .social-icons {
+        display: flex;
+        gap: 16px;
+        .social-tab {
+            border: 1px solid white;
+            border-radius: 50%;
+            padding: 8px;
+            display: flex;
+        }
+        .social-tab:hover {
+            border: 1px solid #FF52C1;
+            svg {
+                fill: #FF52C1;
+            }
+        }
+        svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
+    }
+}
