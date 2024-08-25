@@ -78,10 +78,11 @@ header {
                 font-weight: 400;
                 box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 26%);
                 background-color: white;
+                cursor: pointer;
             }
             button:hover {
                 color: white;
-                background-color: #684BB1;
+                background-color: #E880E8;
             }
         }
     }
@@ -114,5 +115,123 @@ footer {
             fill: white;
         }
 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url(/images/bg-mobile.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #684BB1;   
+    }
+    
+    header {
+        max-width: 375px;
+        margin: 0 auto;
+        height: 10vh;
+        display: flex;
+        justify-content: start;
+        img {
+            width: 125px;
+        }
+    }
+    .hero {
+        .container {
+            margin: 0 auto;
+            max-width: 375px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 80vh; 
+            .hero-inner {
+                max-width: 305px;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            gap: 60px;
+            .hero-img {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 296px;
+                }
+            }
+            .hero-text {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 0px;
+                gap: 24px;
+                width: 100%;
+                h1 {
+                    font-family: "Poppins", sans-serif;
+                    color: white;
+                    font-size: 24px;
+                    line-height: 36px;
+                    font-weight: 600;
+                    text-align: center;
+                   }
+                p {
+                    color: white;
+                    font-family: "Open Sans", sans-serif;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: center;
+                }
+                button {
+                    width: 200px;
+                    padding: 11px 64px;
+                    border-radius: 48px;
+                    outline: none;
+                    color: #684BB1;
+                    border: none;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 12px;
+                    font-weight: 400;
+                    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 26%);
+                    background-color: white;
+                    cursor: pointer;
+                }
+                button:hover {
+                    color: white;
+                    background-color: #E880E8;
+                }
+            }
+        }
+    }
+    footer {
+        max-width: 305px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        height: 10vh;
+        .social-icons {
+            display: flex;
+            gap: 16px;
+            .social-tab {
+                border: 1px solid white;
+                border-radius: 50%;
+                padding: 8px;
+                display: flex;
+            }
+            .social-tab:hover {
+                border: 1px solid #FF52C1;
+                svg {
+                    fill: #FF52C1;
+                }
+            }
+            svg {
+                width: 16px;
+                height: 16px;
+                fill: white;
+            }
+    
+        }
     }
 }

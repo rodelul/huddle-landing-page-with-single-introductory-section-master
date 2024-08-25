@@ -75,10 +75,11 @@ header img {
   font-weight: 400;
   box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.26);
   background-color: white;
+  cursor: pointer;
 }
 .hero .hero-content .hero-text button:hover {
   color: white;
-  background-color: #684BB1;
+  background-color: #E880E8;
 }
 
 footer {
@@ -108,4 +109,118 @@ footer .social-icons svg {
   width: 24px;
   height: 24px;
   fill: white;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(/images/bg-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #684BB1;
+  }
+  header {
+    max-width: 375px;
+    margin: 0 auto;
+    height: 10vh;
+    display: flex;
+    justify-content: start;
+  }
+  header img {
+    width: 125px;
+  }
+  .hero .container {
+    margin: 0 auto;
+    max-width: 375px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+  }
+  .hero .container .hero-inner {
+    max-width: 305px;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .hero .hero-content .hero-img {
+    display: flex;
+    justify-content: center;
+  }
+  .hero .hero-content .hero-img img {
+    width: 296px;
+  }
+  .hero .hero-content .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0px;
+    gap: 24px;
+    width: 100%;
+  }
+  .hero .hero-content .hero-text h1 {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .hero .hero-content .hero-text p {
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+  .hero .hero-content .hero-text button {
+    width: 200px;
+    padding: 11px 64px;
+    border-radius: 48px;
+    outline: none;
+    color: #684BB1;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.26);
+    background-color: white;
+    cursor: pointer;
+  }
+  .hero .hero-content .hero-text button:hover {
+    color: white;
+    background-color: #E880E8;
+  }
+  footer {
+    max-width: 305px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+  }
+  footer .social-icons {
+    display: flex;
+    gap: 16px;
+  }
+  footer .social-icons .social-tab {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 8px;
+    display: flex;
+  }
+  footer .social-icons .social-tab:hover {
+    border: 1px solid #FF52C1;
+  }
+  footer .social-icons .social-tab:hover svg {
+    fill: #FF52C1;
+  }
+  footer .social-icons svg {
+    width: 16px;
+    height: 16px;
+    fill: white;
+  }
 }/*# sourceMappingURL=style.css.map */
